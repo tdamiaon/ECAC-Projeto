@@ -1,0 +1,15 @@
+# Pre-trained feature extractors for the ECAC project. Python 3.10 or later.
+# On Linux without an NVIDIA GPU, install PyTorch first from the CPU index (much smaller download):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+torch>=2.1
+torchvision>=0.16
+torchlibrosa==0.1.0          # the spectrogram layers of CNN14
+librosa>=0.10                # needed by torchlibrosa; also decodes audio soundfile cannot read
+sentence-transformers>=2.6
+huggingface_hub>=0.20
+soundfile>=0.12              # 0.12 and later decode MP3
+soxr>=0.3                    # resampling
+numpy>=1.24
+pillow>=9.0
+pandas>=1.5                  # only for the notebook
+tqdm>=4.60
